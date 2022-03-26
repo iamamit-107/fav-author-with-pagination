@@ -24,9 +24,11 @@ export default function AuthorCard({
 	return (
 		<div className="p-5 rounded-md flex flex-col justify-between shadow border">
 			<div>
-				<h4 className=" text-xl text-blue-800 font-medium text-center mb-3">
-					{author.name}
-				</h4>
+				<a href={`${author.link}`} target="_blank" rel="noreferrer">
+					<h4 className=" text-xl text-blue-800 font-medium text-center mb-3">
+						{author.name}
+					</h4>
+				</a>
 				<p className=" text-justify text-ellipsis font-light leading-tight">
 					{author.bio}
 				</p>
